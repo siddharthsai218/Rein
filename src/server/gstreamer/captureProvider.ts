@@ -22,6 +22,7 @@ export class WindowsCaptureProvider implements CaptureProvider {
 	public async getGStreamerSource(): Promise<string[]> {
 		return [
 			"d3d11screencapturesrc",
+			"show-cursor=true",
 			"do-timestamp=true",
 			"!",
 			"queue",
